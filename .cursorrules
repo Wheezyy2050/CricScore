@@ -1,0 +1,31 @@
+# SA Cricket App
+
+## Stack
+- Expo Router with TypeScript
+- Supabase for backend (auth, database, realtime)
+- React Native functional components only — no class components
+
+## Project structure
+- `app/` — Expo Router screens and layouts
+- `app/(tabs)/` — bottom tab navigation (Home, Teams, Stats)
+- `components/` — reusable UI components
+- `lib/` — shared utilities and clients (e.g. Supabase)
+- `constants/` — static data and configuration
+
+## Conventions
+- Use functional components with typed props
+- Use `@/` path alias for imports
+- Fetch live data from Supabase; keep sample/placeholder data only for development
+- Environment variables: `EXPO_PUBLIC_SUPABASE_URL`, `EXPO_PUBLIC_SUPABASE_ANON_KEY`
+
+## SA Cricket Teams
+The app covers South African domestic and national cricket:
+- Proteas (national team)
+- Titans
+- Lions
+- Dolphins
+- Cape Cobras
+- Knights
+- Warriors
+
+Team data lives in `constants/teams.ts`.
